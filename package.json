@@ -14,11 +14,11 @@
     "prestart": "npx prisma migrate deploy",
     "start": "node build/server.js",
     "build": "npx tsup src --out-dir build",
-    "test": "vitest run --dir src/use-cases",
+    "test": "vitest run --dir __tests__/unit",
     "test:watch": "vitest --watch --dir src/use-cases",
     "test:coverage": "vitest --coverage",
     "test:ui": "vitest --ui",
-    "test:e2e": "vitest  run --dir src/__tests__/e2e",
+    "test:e2e": "vitest  run --dir __tests__/e2e",
     "test:e2e:watch": "vitest --watch --dir src/http"
   },
   "dependencies": {

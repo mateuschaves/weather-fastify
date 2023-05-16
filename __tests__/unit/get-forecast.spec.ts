@@ -1,6 +1,6 @@
 import { describe, expect, it, beforeEach, vi, afterEach } from 'vitest'
 import InMemoryForecastRepository from '@/repositories/in-memory/in-memory-forecast.repository'
-import { GetForecastUseCase } from '../get-forecast'
+import { GetForecastUseCase } from '@/use-cases/get-forecast'
 
 let inMemoryGetForecastRepository: InMemoryForecastRepository
 let sut: GetForecastUseCase

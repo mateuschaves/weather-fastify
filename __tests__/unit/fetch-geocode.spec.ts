@@ -1,6 +1,6 @@
 import InMemoryGeocodeRepository from '@/repositories/in-memory/in-memory-geocode.repository'
 import { describe, expect, it, beforeEach } from 'vitest'
-import { FetchGeocodeUseCase } from '../fetch-geocode'
+import { FetchGeocodeUseCase } from '../../src/use-cases/fetch-geocode'
 
 let inMemoryFetchGeocodeRepository: InMemoryGeocodeRepository
 let sut: FetchGeocodeUseCase
