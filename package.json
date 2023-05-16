@@ -10,7 +10,7 @@
     "start:dev": "tsx watch src/server.ts",
     "prestart": "npx prisma migrate deploy",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build",
+    "build": "npx tsup src --out-dir build",
     "test": "vitest run --dir src/use-cases",
     "test:watch": "vitest --watch --dir src/use-cases",
     "test:coverage": "vitest --coverage",
