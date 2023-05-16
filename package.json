@@ -6,6 +6,9 @@
   "author": "Mateus Henrique <mateushenriquechaves1@gmail.com>",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "prestart": "npx prisma migrate deploy",
