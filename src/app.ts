@@ -1,5 +1,6 @@
 import fastify from 'fastify'
 import { ZodError } from 'zod'
+import cors from '@fastify/cors'
 
 import { env } from './env'
 import { forecastRoutes } from './http/controllers/forecast/routes'
@@ -9,6 +10,7 @@ const app = fastify()
 app.get('/', async () => ({ hello: 'world' }))
 
 app.register(forecastRoutes)
+app.register(cors)
 
 app.setErrorHandler((error, _, reply) => {
   if (error instanceof ZodError) {
